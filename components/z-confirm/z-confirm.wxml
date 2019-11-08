@@ -1,0 +1,8 @@
+<view class="z-confirm-wrapper">
+  <textarea class="z-confirm-textarea"  value="{{inputContent}}" placeholder="创建任务" auto-focus bindinput="watchInput"></textarea>
+  <view class="z-confirm-confirm">
+  <view hover-class="active" class="z-confirm-ensure" bindtap="watchConfirm">确定</view>
+  <view class="z-confirm-line"></view>
+  <view hover-class="active" class="z-confirm-cancel" bindtap="watchCancel">取消</view>
+  </view>
+</view>

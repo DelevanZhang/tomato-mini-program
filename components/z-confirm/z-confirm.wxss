@@ -1,0 +1,47 @@
+.z-confirm-wrapper{
+  width:640rpx;
+  height:194rpx;
+  background-color: #FFFFFF;
+  border-top: 1px solid transparent;
+}
+.z-confirm-textarea{
+  width: 600rpx;
+  height:80rpx;
+  background-color: #F2F2F2;
+  margin: 25rpx auto;
+  border-radius: 8rpx;
+  color: #737373;
+  font-size: 28rpx;
+}
+.z-confirm-confirm {
+  width:378rpx;
+  height:40rpx;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.z-confirm-line{
+  width: 1px;
+  height: 51rpx;
+  background-color: #F6705A;
+  
+}
+.z-confirm-ensure{
+  width: 57rpx;
+  height: 36rpx;
+  color: #F6705A;
+  font-size:28rpx;
+}
+.z-confirm-ensure.active{
+  color: rgba(246, 112, 90, 0.5)
+}
+.z-confirm-cancel{
+  width: 57rpx;
+  height: 36rpx;
+  font-size:28rpx;
+  color: #737373;
+}
+.z-confirm-cancel.active{
+  color: rgba(115, 115, 115, 0.5)
+}

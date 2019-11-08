@@ -1,0 +1,8 @@
+<!--components/z-task/z-task.wxml-->
+<view class="container">
+  <view class="cicle">
+    <view class="point" wx:if="{{finished}}"></view>
+  </view>
+  <text class="content">{{content}}</text>
+</view>
+<view class="line"></view>

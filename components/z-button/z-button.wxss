@@ -1,0 +1,24 @@
+.z-button-container {
+  width: 540rpx;
+  height: 80rpx;
+  /* border: 1px solid #979797; */
+  border-radius:16rpx;
+  background: linear-gradient(45deg, #fe996f 0%,#207cca 0%,#fe996f 0%,#f6705a 100%); 
+  box-shadow: 0 4rpx 8rpx 0 #DA0000,0 11rpx 32rpx 0 #F6705A;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+.z-button-container.active{
+   box-shadow: 0 8rpx 12rpx 0 #DA0000,0 15rpx 36rpx 0 #F6705A;
+}
+.z-button-container.mini {
+  width: 200rpx;
+}
+.z-button-content {
+  font:normal 26rpx PingFangSC-Regular;
+  color:#FFFFFF;
+}
+
+

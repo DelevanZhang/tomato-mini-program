@@ -1,0 +1,49 @@
+/* components/z-task/z-task.wxss */
+@import '../../base/base.wxss';
+
+.container {
+  width: 690rpx;
+  height: 72rpx;
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  border-radius: 10rpx;
+  background-color: #fff;
+}
+
+.cicle {
+  width: 20rpx;
+  height: 20rpx;
+  border: 1px solid #f8765d;
+  margin-left: 30rpx;
+  margin-right: 30rpx;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink:0;
+}
+
+.point {
+  width: 10rpx;
+  height: 10rpx;
+  background-color: #f8765d;
+  border-radius: 50%;
+}
+
+.content {
+  font: normal 28rpx ingFangSC-Regular;
+  color: #333;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  /* margin-left: 2rpx;
+  margin-right: 2rpx; */
+}
+
+.line {
+  width: 0px;
+  height: 40rpx;
+  border: 1px solid #f8765d;
+  margin-left: 70rpx;
+}

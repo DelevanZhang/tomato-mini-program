@@ -1,0 +1,37 @@
+/* .index-container{
+  height: 100vh;
+  background-color: #F6F6F6;
+} */
+page{
+  background-color: #F6F6F6;
+}
+scroll-view {
+  width: 750rpx;
+  height: 552rpx;
+  margin-bottom: 30rpx;
+}
+z-button {
+  margin-bottom: 40rpx;
+}
+.login-status{
+  height:25rpx;
+  font-size:20rpx;
+  color:#F6705A;
+  display: flex;
+  justify-content: center;
+  margin-top: 40rpx;
+}
+.index-z-tomato-wrapper {
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ margin-top:40rpx;
+}
+.z-confirm-wrapper{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top:542rpx;
+  left: 55rpx;
+}
