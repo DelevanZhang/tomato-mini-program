@@ -12,6 +12,7 @@
   border-radius: 8rpx;
   color: #737373;
   font-size: 28rpx;
+  padding: 8rpx;
 }
 .z-confirm-confirm {
   width:378rpx;

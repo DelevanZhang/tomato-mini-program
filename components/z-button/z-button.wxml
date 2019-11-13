@@ -1,3 +1,3 @@
-<view hover-class="active" class="z-button-container {{z_button_type==='mini'?'mini':''}}" bindtap="createTask">
+<view hover-class="active" class="z-button-container {{z_button_type==='mini'?'mini':''}} {{z_button_bg==='change'?'change':''}}" bindtap="createTask">
   <text class="z-button-content">{{z_button_content}}</text>
 </view>

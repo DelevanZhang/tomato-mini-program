@@ -11,6 +11,10 @@ Component({
     z_button_type:{
       type:String,
       value:'default'
+    },
+    z_button_bg:{
+      type:String,
+      value:""
     }
   },
 

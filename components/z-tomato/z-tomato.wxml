@@ -1,8 +1,8 @@
 <!--components/z-tomato/z-tomato.wxml-->
 <view class="wrapper">
   <image class="z-tomato-img" src="../../images/tomato.png">
-    <text class="z-tomato-text">
-    <slot></slot>
-  </text>
+    <view class="z-tomato-text" style="font-size:{{fontSize}}rpx">
+      <text>{{tomatoText}}</text>
+    </view>
   </image>
 </view>

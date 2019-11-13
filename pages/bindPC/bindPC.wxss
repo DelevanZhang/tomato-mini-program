@@ -1,0 +1,61 @@
+.bindPCWrapper{
+  position: relative;
+}
+.bindPCbindText {
+  width: 170rpx;
+  height: 41rpx;
+  font-size: 32rpx;
+  color: #333;
+  position: relative;
+  margin-left: 40rpx;
+}
+
+.bindPCbindText::before {
+  content: "";
+  position: absolute;
+  bottom: 0px;
+  top: 50%;
+  left: -6rpx;
+  background-color: #ffdccf;
+  width: 182rpx;
+  z-index: -1;
+}
+
+.bindPC-account {
+  width: 640rpx;
+  height: 80rpx;
+  border: 2rpx solid #fe996f;
+  border-radius: 16rpx;
+  box-shadow: 0 2rpx 2rpx 0 #da0000, 0 4rpx 16rpx 0 #f6705a;
+  font-size: 24rpx;
+  color: #f6705a;
+  margin: 0 auto;
+  margin-top: 80rpx;
+  padding: 0 40rpx;
+}
+
+.bindPC-password {
+  width: 640rpx;
+  height: 80rpx;
+  border: 2rpx solid #fe996f;
+  border-radius: 16rpx;
+  box-shadow: 0 2rpx 2rpx 0 #da0000, 0 4rpx 16rpx 0 #f6705a;
+  font-size: 24rpx;
+  color: #f6705a;
+  margin: 0 auto;
+  margin-top: 80rpx;
+  padding: 0 40rpx;
+}
+.bindPC-z-button{
+  margin-top:80rpx;
+}
+.bindPC-register{
+  font-size: 20rpx;
+  color:#f6705a;
+  margin-top:50rpx;
+  text-align: center;
+}
+.bindPC-image{
+  width: 100%;
+  height: 750rpx;
+}

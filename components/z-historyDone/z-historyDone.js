@@ -1,16 +1,20 @@
-// components/z-tomato/z-tomato.js
+// components/z-historyDone/z-historyDone.js
 Component({
   /**
    * 组件的属性列表
    */
   properties: {
-    fontSize:{
-      type:String,
-      value:"20"
-    },
-    tomatoText:{
+    historyTime:{
       type:String,
       value:''
+    },
+    time:{
+      type: String,
+      value: ''
+    },
+    content:{
+      type: String,
+      value: ''
     }
   },
 

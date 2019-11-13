@@ -1,0 +1,7 @@
+<view class="z-history-wrapper">
+  <view class="z-history-historyTime">{{historyTime}}</view>
+  <view class="z-history-item">
+    <view class="z-history-time">{{time}}</view>
+    <view class="z-history-content">{{content}}</view>
+  </view>
+</view>

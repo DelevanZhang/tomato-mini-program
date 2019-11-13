@@ -1,8 +1,11 @@
 {
   "pages": [
     "pages/index/index",
+    "pages/tomato/tomato",
     "pages/dataStatistics/dataStatistics",
     "pages/mine/mine",
+    "pages/bindPC/bindPC",
+    "pages/login/login",
     "pages/logs/logs"
   ],
   "window": {

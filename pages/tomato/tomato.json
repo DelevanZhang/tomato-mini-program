@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "z-tomato": "../../components/z-tomato/z-tomato",
+    "z-button": "../../components/z-button/z-button",
+    "z-confirm": "../../components/z-confirm/z-confirm"
+  }
+}

@@ -1,18 +1,20 @@
 <view class="index-container">
   <scroll-view scroll-y>
-   <view wx:for="{{lists}}" wx:key="{{index}}">
-   <z-task content="{{item.content}}" finished="{{item.finished}}" bindtap=""/>
-   </view>
+    <view wx:for="{{lists}}" wx:key="{{index}}">
+      <z-task content="{{item.content}}" finished="{{item.finished}}" bindtap="" />
+    </view>
   </scroll-view>
-  <z-button z_button_content="创建任务" bindcreateTask="hiddenTask"/>
+  <z-button z_button_content="创建任务" bindcreateTask="hiddenTask" z_button_bg="change"/>
   <view class="login-status">
     <text>尚未登陆</text>
   </view>
-  <view class="index-z-tomato-wrapper">
-    <z-tomato class="z-tomato-index">点击开始番茄</z-tomato>
+  <navigator url="/pages/tomato/tomato" hover-class="none">
+    <view class=" index-z-tomato-wrapper">
+      <z-tomato class="z-tomato-index" tomatoText="点击开始番茄"/>
+    </view>
+  </navigator>
+  <view class="z-confirm-wrapper " hidden="{{confirmisVisible}}">
+    <z-confirm placeholderText="创建内容" bindwatchConfirm="confirmYes" bindwatchcancel="confirmNo" />
   </view>
-  <view class="z-confirm-wrapper" hidden="{{confirmisVisible}}">
-  <z-confirm bindinputContent="getContent" bindcancelConfirm="cancelConfirm"/>
-  </view>
-  
+
 </view>

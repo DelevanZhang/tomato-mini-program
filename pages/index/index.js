@@ -4,10 +4,8 @@ Page({
    * 页面的初始数据
    */
   data: {
-    confirmisVisible: {
-      type: Boolean,
-      value: true
-    },
+    confirmisVisible:true,
+     
     lists: [
       { "id": 1, content: "君不见，黄河之水天上来，奔流到海不复回。", "finished": true },
       { "id": 2, "content": "君不见，黄河之水天上来，奔流到海不复回。", "finished": true },
@@ -20,19 +18,20 @@ Page({
   /**
    * 通过z-confirm组件获取数据
    */
-  getContent(e) {
+  confirmYes(e) {
     this.setData({
       "confirmisVisible": true
     })
     console.log(e)
     let content = [{id:this.data.lists.length+1,content:e.detail,finished:false}]
-    let newLists = this.data.lists.concat(content)
+    // let newLists = this.data.lists.concat(content)
+    let newLists = content.concat(this.data.lists)
     this.setData({ "lists": newLists})
 },
 /**
  * confirm取消按钮
  */
-  cancelConfirm(){
+  confirmNo(){
     this.setData({
       "confirmisVisible": true
     })
@@ -44,6 +43,7 @@ Page({
     this.setData({
       "confirmisVisible": false
     })
+    console.log("111")
     
   },
   /**

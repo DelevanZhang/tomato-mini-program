@@ -4,7 +4,10 @@ Component({
    * 组件的属性列表
    */
   properties: {
-
+    placeholderText:{
+      type:String,
+      value:""
+    }
   },
 
   /**
@@ -19,11 +22,11 @@ Component({
    */
   methods: {
     watchConfirm(e){
-      this.triggerEvent('inputContent', this.data.inputContent) 
+      this.triggerEvent('watchConfirm', this.data.inputContent) 
       this.setData({ "inputContent":""})
     },
     watchCancel(){
-      this.triggerEvent('cancelConfirm', this.data.inputContent) 
+      this.triggerEvent('watchcancel', this.data.inputContent) 
       this.setData({ "inputContent": "" })
     },
     watchInput(e){

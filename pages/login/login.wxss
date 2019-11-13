@@ -1,0 +1,36 @@
+page{
+  background-color: #EEF7F6;
+}
+.login-userAvatarUrl-wrapper{
+  width: 237rpx;
+  height: 237rpx;
+  border: 16rpx solid #F6705A;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 243rpx auto 20rpx auto;
+}
+.login-userNickName{
+  font-size: 28rpx;
+  color:#F6705A;
+  text-align: center;
+  position: relative;
+}
+.login-userNickName::after{
+  content: "";
+  position: absolute;
+  bottom: -10rpx;
+  width: 180rpx;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 2rpx;
+  border: 1px solid #FE996F;
+}
+.login-z-button{
+  margin-top: 60rpx;
+}
+.login-bindPC{
+  font-size: 20rpx;
+  color:#F6705A;
+  text-align: center;
+  margin-top:50rpx;
+}

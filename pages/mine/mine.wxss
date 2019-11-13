@@ -1,1 +1,84 @@
-/* pages/mine/mine.wxss */
+page{
+  background-color: #F6F6F6;
+}
+.mine-header {
+  height: 170rpx;
+  display: flex;
+  align-items: center;
+  position: relative;
+  background-color: #FFFFFF;
+}
+
+.mine-header .mine-userAvatarUrl {
+  width: 120rpx;
+  height: 120rpx;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-left:40rpx;
+}
+.mine-userNickName{
+  font-size:32rpx;
+  color:#333333;
+}
+.mine-nickPC{
+  margin-left:30rpx;
+}
+.mine-bindPC{
+  font-size:20rpx;
+  color:#F6705A;
+  margin-top:30rpx;
+}
+.mine-backPro{
+  font-size:20rpx !important;
+  color:#F6705A;
+  position: absolute;
+  top:50%;
+  right:40rpx;
+  transform: translateY(-50%);
+  background-color: #fff;
+  font-weight: normal;
+}
+.mine-backPro::after{
+  border: none;
+  /* width: 100% !important;
+  height: 100% !important; */
+}
+.mine-tab{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height:80rpx;
+  margin-top:20rpx;
+  font-size:28rpx;
+  color:#333333;
+  background-color: #FFFFFF;
+  padding: 0 130rpx;
+}
+.mine-tab >view:nth-child(1){
+  position: relative;
+}
+.mine-tab >view:nth-child(1).active::after{
+  content:'';
+  position:absolute;
+  bottom: 0;
+  left:10rpx;
+  right:10rpx;
+  bottom: -20rpx;
+  margin: 0 auto;
+  border: 4rpx solid #FE996F;
+  transition: all 0.5s;
+}
+.mine-tab >view:nth-child(2){
+  position: relative;
+}
+.mine-tab >view:nth-child(2).active::after{
+  content:'';
+  position:absolute;
+  bottom: 0;
+  left:10rpx;
+  right:10rpx;
+  bottom: -20rpx;
+  margin: 0 auto;
+  border: 4rpx solid #FE996F;
+  transition: all 2s;
+}

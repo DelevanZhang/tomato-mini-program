@@ -1,0 +1,28 @@
+<view>
+  <text class="tomato-text">距离结束</text>
+  <view class="z-tomato-wrapper">
+    <z-tomato fontSize="40" tomatoText="{{time}}"></z-tomato>
+  </view>
+  <view>
+    <view wx:if="{{isShowAgain}}" class="tomato-isShowAgain">
+      <z-button z_button_type="mini" z_button_content="再来一组" z_button_bg="change" />
+    </view>
+    <view wx:else>
+      <view wx:if="{{showConfirm}}" class="tomato-showConfirm">
+        <z-confirm placeholderText="放弃的理由" bindwatchConfirm="confrimYes" bindwatchcancel="confrimNo" />
+      </view>
+      <view wx:else>
+        <view class="tomato-stop" bindtap="stopTomatoTime">
+          <z-button z_button_type="mini" z_button_content="{{isStopOrStart}}" z_button_bg="change" />
+        </view>
+        <view class="tomato-give-up" bindtap="giveUpTomato">
+          <z-button z_button_type="mini" z_button_content="放弃" />
+        </view>
+
+      </view>
+
+    </view>
+
+  </view>
+
+</view>

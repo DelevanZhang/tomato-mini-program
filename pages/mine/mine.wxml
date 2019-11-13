@@ -1,2 +1,23 @@
-<!--pages/mine/mine.wxml-->
-<text>pages/mine/mine.wxml</text>
+<view class="mine-wrapper">
+  <view class="mine-header">
+    <view class="mine-userAvatarUrl">
+      <open-data type="userAvatarUrl"></open-data>
+    </view>
+    <view class="mine-nickPC">
+      <open-data type="userNickName" class="mine-userNickName"></open-data>
+      <view class="mine-bindPC">绑定PC账号</view>
+    </view>
+    <!-- <view class="mine-backPro">问题反馈</view> -->
+    <button open-type="contact" size="mini" class="mine-backPro">问题反馈</button>
+  </view>
+  <view class="mine-tab">
+    <view class="{{isHistoryTab===true?'active':''}}" bindtap="changeHistoryTab">番茄历史</view>
+    <view class="{{isHistoryTab===false?'active':''}}" bindtap="changeDoneTab">我完成的任务</view>
+  </view>
+  <view class="mine-done-history">
+    <view class="z-historyDone-wrapper">
+      <z-historyDone historyTime="本周四" time="14:00" content="现代诗库电子书库"/>
+    </view>
+
+  </view>
+</view>

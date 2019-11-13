@@ -1,3 +1,5 @@
 {
-  "usingComponents": {}
+  "usingComponents": {
+    "z-historyDone":"../../components/z-historyDone/z-historyDone"
+  }
 }
