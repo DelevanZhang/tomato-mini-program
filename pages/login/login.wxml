@@ -6,7 +6,7 @@
     <open-data type="userNickName"></open-data>
   </view>
   <view class="login-z-button">
-    <z-button z_button_content="登陆" z_button_bg="change" z_button_type="mini" />
+    <button open-type="getUserInfo" bindgetuserinfo="login"  class="login-login">登陆</button>
   </view>
   <view class="login-bindPC">还没有于pc端绑定?去绑定></view>
 </view>

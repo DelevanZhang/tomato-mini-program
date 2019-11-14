@@ -34,3 +34,15 @@ page{
   text-align: center;
   margin-top:50rpx;
 }
+.login-login{
+  width: 540rpx;
+  height: 80rpx;
+  border-radius: 16rpx;
+  background: linear-gradient(45deg, #fe996f 0%, #207cca 0%, #fe996f 0%, #f6705a 100%);
+  box-shadow: 0 4rpx 8rpx 0 #da0000, 0 11rpx 32rpx 0 #f6705a;
+  font: normal 26rpx PingFangSC-Regular;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
