@@ -2,13 +2,13 @@
   <view class="bindPCbindText">绑定PC账号</view>
   <view>
     <form>
-       <input placeholder="账号" class="bindPC-account"></input>
-       <input placeholder="密码" password="true" class="bindPC-password"></input>
+       <input placeholder="账号" class="bindPC-account" bindinput="watchAccount"></input>
+       <input placeholder="密码" password="true" class="bindPC-password" bindinput="watchPassword"></input>
     </form>
   </view>
   <view class="bindPC-z-button">
-   <z-button z_button_content="登陆" z_button_bg="change" z_button_type="mini" />
+   <z-button z_button_content="绑定" z_button_bg="change" z_button_type="mini" bindtap="clickBind"/>
   </view>
-  <view class="bindPC-register">还没有PC账号，注册吧兄弟</view>
+  <view class="bindPC-register">绑定PC账号，立即同步数据</view>
   <image src="../../images/tomato.png" class="bindPC-image"></image>
 </view>

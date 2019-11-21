@@ -1,5 +1,4 @@
 .z-history-wrapper {
-  width: 710rpx;
   background-color: #FFFFFF;
   margin-left: auto;
   margin-right: auto;

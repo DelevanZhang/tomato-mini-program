@@ -25,6 +25,11 @@ Component({
    * 组件的方法列表
    */
   methods: {
-
+    clickCicle(){
+      this.triggerEvent("clickCicle",{})
+    },
+    editContent(){
+      this.triggerEvent("editContent", {})
+    }
   }
 })

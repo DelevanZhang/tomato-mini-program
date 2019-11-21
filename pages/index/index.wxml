@@ -1,20 +1,21 @@
 <view class="index-container">
   <scroll-view scroll-y>
     <view wx:for="{{lists}}" wx:key="{{index}}">
-      <z-task content="{{item.content}}" finished="{{item.finished}}" bindtap="" />
+      <z-task content="{{item.description}}" finished="{{item.completed}}" bindtap="deleteTodo" data-index="{{index}}" data-id="{{item.id}}"  bindclickCicle="clickCompleteTask" bindeditContent="editContent" wx:if="{{!item.completed}}"/>
     </view>
   </scroll-view>
-  <z-button z_button_content="创建任务" bindcreateTask="hiddenTask" z_button_bg="change"/>
-  <view class="login-status">
-    <text>尚未登陆</text>
-  </view>
-  <navigator url="/pages/tomato/tomato" hover-class="none">
-    <view class=" index-z-tomato-wrapper">
-      <z-tomato class="z-tomato-index" tomatoText="点击开始番茄"/>
+  <view class="index-bgcolor">
+    <z-button z_button_content="创建任务" bindcreateTask="hiddenTask" z_button_bg="change" />
+    <!-- <view class="login-status">
+      <text>尚未登陆</text>
+    </view> -->
+    <navigator url="/pages/tomato/tomato" hover-class="none">
+      <view class=" index-z-tomato-wrapper">
+        <z-tomato class="z-tomato-index" tomatoText="点击开始番茄" />
+      </view>
+    </navigator>
+    <view class="z-confirm-wrapper " hidden="{{confirmisVisible}}">
+      <z-confirm placeholderText="创建内容" oldContent="{{oldContent}}" bindwatchConfirm="confirmYes" bindwatchcancel="confirmNo" bindwatchInput="watchInput"/>
     </view>
-  </navigator>
-  <view class="z-confirm-wrapper " hidden="{{confirmisVisible}}">
-    <z-confirm placeholderText="创建内容" bindwatchConfirm="confirmYes" bindwatchcancel="confirmNo" />
   </view>
-
 </view>

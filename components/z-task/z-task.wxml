@@ -1,8 +1,8 @@
 <!--components/z-task/z-task.wxml-->
 <view class="container">
-  <view class="cicle">
+  <view class="cicle" bindtap="clickCicle">
     <view class="point" wx:if="{{finished}}"></view>
   </view>
-  <text class="content">{{content}}</text>
+  <text class="content" bindtap="editContent">{{content}}</text>
 </view>
 <view class="line"></view>

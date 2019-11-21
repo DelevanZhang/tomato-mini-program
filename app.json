@@ -26,12 +26,6 @@
         "selectedIconPath":"./images/home-active.png"
       },
       {
-        "pagePath": "pages/dataStatistics/dataStatistics",
-        "text": "数据统计",
-        "iconPath": "./images/total.png",
-        "selectedIconPath": "./images/total-active.png"
-      },
-      {
         "pagePath": "pages/mine/mine",
         "text": "我的",
         "iconPath": "./images/me.png",

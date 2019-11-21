@@ -35,3 +35,6 @@ z-button {
   top:542rpx;
   left: 55rpx;
 }
+.index-bgcolor{
+  background-color: #EEF7F6;
+}

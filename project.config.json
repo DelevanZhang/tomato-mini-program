@@ -64,6 +64,13 @@
 					"id": -1,
 					"name": "pages/bindPC/bindPC",
 					"pathName": "pages/bindPC/bindPC",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/tomato/tomato",
+					"pathName": "pages/tomato/tomato",
 					"scene": null
 				}
 			]

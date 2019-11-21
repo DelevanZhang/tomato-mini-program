@@ -1,25 +1,60 @@
 // pages/mine/mine.js
+const {http} = require("../../request/http.js")
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    isHistoryTab: true
+    isHistoryTab: true,
+    tomatoDatas:{},
+    todosDatas:{},
+    me: {}
   },
   /**
    * 点击切换Tab
    */
   changeHistoryTab(e) {
-    console.log(1)
     this.setData({
       isHistoryTab: true
     })
   },
   changeDoneTab(e) {
-    console.log(2)
     this.setData({
       isHistoryTab: false
+    })
+  },
+  /**
+   * 进入页面获取历史和完成任务的数据
+   */
+  getTodosData(){
+    http.get("/todos",{
+      is_group: "yes"
+    })
+    .then(res=>{
+      console.log(res)
+      this.setData({ todosDatas:res.data.resources})
+    })
+  },
+  /**
+   * 进入页面获取历史和完成任务的数据
+   */
+  getTomatoData(){
+    http.get("/tomatoes",{
+      is_group: "yes"
+    })
+    .then(res=>{
+      console.log("-----")
+      console.log(res)
+      this.setData({ tomatoDatas:res.data.resources})
+    })
+  },
+  /**
+   * 绑定PC账号
+   */
+  clickBindPC(){
+    wx.reLaunch({
+      url: '/pages/bindPC/bindPC',
     })
   },
   /**
@@ -40,7 +75,9 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function() {
-
+    this.getTomatoData()
+    this.getTodosData()
+    this.setData({ me: wx.getStorageSync('me') })
   },
 
   /**

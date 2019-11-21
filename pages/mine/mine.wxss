@@ -82,3 +82,10 @@ page{
   border: 4rpx solid #FE996F;
   transition: all 2s;
 }
+.z-historyDone-wrapper{
+  margin-top:30rpx;
+}
+.mine-done-history,
+.mine-done-task{
+  margin:30rpx 20rpx;
+}

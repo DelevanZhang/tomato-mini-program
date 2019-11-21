@@ -12,10 +12,18 @@ const _http = (method,url, data,)=>{
         "t-app-secret":t_app_secret
       },
       success(res) {
-        resolve(res)
+        let statusCode = res.statusCode
+        if (statusCode === 401 || statusCode===422){
+          wx.reLaunch({
+            url: '/pages/login/login',
+          })
+        }else{
+          resolve(res)
+        }
       },
       fail(err){
-        console.log(err)
+        wx.showToast({ title: '请求失败', icon: 'none' })
+        reject(errors)
       }
     })
   })

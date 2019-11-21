@@ -1,5 +1,5 @@
 <view class="z-confirm-wrapper">
-  <textarea class="z-confirm-textarea"  value="{{inputContent}}" placeholder="{{placeholderText}}"  bindinput="watchInput"></textarea>
+  <textarea class="z-confirm-textarea"  value="{{oldContent}}" placeholder="{{placeholderText}}"  bindinput="watchInput"></textarea>
   <view class="z-confirm-confirm">
   <view hover-class="active" class="z-confirm-ensure" bindtap="watchConfirm">确定</view>
   <view class="z-confirm-line"></view>

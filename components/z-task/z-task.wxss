@@ -37,8 +37,7 @@
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
-  /* margin-left: 2rpx;
-  margin-right: 2rpx; */
+  flex-grow: 1;
 }
 
 .line {

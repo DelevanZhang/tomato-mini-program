@@ -1,4 +1,5 @@
 // pages/tomato/tomato.js
+const {http} = require("../../request/http.js")
 Page({
 
   /**
@@ -12,7 +13,9 @@ Page({
     isStop:true,
     stopOrstart:"",//显示开始还是暂停
     showConfirm:false ,//点击放弃显示确认弹窗
-    isShowAgain: false  //是否显示再来一组
+    isShowAgain: false,  //是否显示再来一组
+    tomato:{},//tomato对象
+    content:""
   },
 
   /**
@@ -71,6 +74,9 @@ Page({
    * 点击confirm的确定按钮
    */
   confrimYes(e){
+    let content = e.detail
+    this.setData({ content})
+    this.updateTomato()
     wx.navigateBack({
       to:-1
     })
@@ -111,7 +117,18 @@ Page({
         isStopOrStart: this.data.isStop===true?"暂停":'开始'
       })
     },
-   
+  /**
+   * 更新番茄
+   */
+   updateTomato(){
+     http.put(`/tomatoes/${this.data.tomato.id}`, {
+       description: this.data.content,
+       aborted: true
+     })
+       .then(res => {
+         console.log(res)
+       })
+   },
   /**
    * 生命周期函数--监听页面初次渲染完成
    */
@@ -121,14 +138,19 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function() {
-
+    http.post("/tomatoes")
+    .then(res=>{
+      console.log("创建tomaoto")
+      console.log(res)
+      this.setData({tomato:res.data.resource})
+    })
   },
 
   /**
    * 生命周期函数--监听页面隐藏
    */
   onHide: function() {
-
+    this.updateTomato()
   },
 
   /**

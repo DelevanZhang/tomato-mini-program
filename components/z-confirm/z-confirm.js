@@ -7,6 +7,10 @@ Component({
     placeholderText:{
       type:String,
       value:""
+    },
+    oldContent:{
+      type: String,
+      value: ""
     }
   },
 
@@ -31,6 +35,7 @@ Component({
     },
     watchInput(e){
      this.data.inputContent=e.detail.value
+      this.triggerEvent('watchInput', this.data.inputContent) 
     }
   }
 })
